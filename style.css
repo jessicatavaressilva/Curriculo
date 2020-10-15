@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    display: block;
+}
+
+main {
+    display: flex;
+}
+
+.cv-informations {
+    background: #19304f;
+    color: white;
+    width: 342px;
+    padding: 37px;
+    padding-top: 136px;
+}
+
+.cv-content {
+    width: calc(100% - 342px);
+    padding: 37px;
+}
+
+.cv-informations h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.cv-informations-block-content {
+    margin-top: 11px;
+    margin-left: 9px;
+    line-height: 28px;
+}
+
+.cv-informations-block-content span {
+    font-weight: 300;
+}
+
+.cv-informations-block-content ul {
+    list-style-type: none;
+    margin-top: 14px;
+}
+
+.cv-informations-block-content .list-buttons li {
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.cv-informations-block-content .list-skills {
+    margin-top: 11px;
+}
+
+.cv-informations-block-content .list-skills li {
+    border-bottom: 3px solid white;
+    margin-top: 9px;
+}
+
+.cv-informations-block-content ul li img {
+    width: 25px;
+}
+
+.cv-informations-block:not(:first-child) {
+    margin-top: 87px;
+}
+
+.user-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.user-header-pic img {
+    width: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-header-role {
+    margin-left: 11px;
+    text-align: center;
+}
+
+.user-header-role span {
+    margin-top: 6px;
+    font-size: 18px;
+    color: #19304f;
+    font-weight: 400;
+
+}
+
+.user-header-role h1 {
+    font-weight: 400;
+    color: #19304f;
+}
+
+
+.user-info-block-title h2 {
+    color: #19304f;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.user-info {
+    margin-top: 36px;
+}
+
+.user-info-block:not(:first-child) {
+    margin-top: 36px;
+}
+
+.user-info-block-item {
+    margin-top: 10px;
+}
+
+.user-info-block-item p {
+    line-height: 22px;
+    font-size: 16px;
+    color: #222222;
+
+}
+
+.user-info-block-item ul {
+    padding-left: 40px;
+}
+
+.user-info-block-item ul li {
+    color: #222222;
+    line-height: 22px;
+
+}
+
+.user-info-block-item ul li:not(:first-child) {
+    margin-top: 11px;
+}
+
+.user-info-block-item p:not(:first-child) {
+    margin-top: 11px;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+        ;
+    }
+
+    .cv-informations {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 37px;
+    }
+
+    .cv-informations-block {
+        width: 100%;
+
+    }
+
+    .cv-informations-block:not(:first-child) {
+        margin-top: 36px;
+    }
+
+    .cv-content {
+        width: 100%;
+    }
+
+    .user-header-role h1 {
+    
+        font-size: 26px;
+    }
+}
